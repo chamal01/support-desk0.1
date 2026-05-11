@@ -61,11 +61,11 @@ const auth = getAuth(app);
 const appId = 'local-support-desk';
 
 
-//const initialUsers = [
-  //{ id: 'U-101', name: 'System Admin', email: 'admin@example.com', password: 'password', role: 'Admin' },
-  //{ id: 'U-102', name: 'Support Agent', email: 'agent@example.com', password: 'password', role: 'Agent' },
-  //{ id: 'U-103', name: 'John Doe', email: 'customer@example.com', password: 'password', role: 'Customer' },
-//];
+const initialUsers = [
+  { id: 'U-101', name: 'System Admin', email: 'admin@example.com', password: 'password', role: 'Admin' },
+  { id: 'U-102', name: 'Support Agent', email: 'agent@example.com', password: 'password', role: 'Agent' },
+  { id: 'U-103', name: 'John Doe', email: 'customer@example.com', password: 'password', role: 'Customer' },
+];
 
 const initialTickets = [
   {
@@ -529,12 +529,7 @@ function LoginView({ onLogin }) {
           </form>
         </div>
         <div className="bg-slate-50 p-6 border-t border-slate-100 text-sm text-slate-600">
-          <p className="font-semibold mb-2 text-slate-700">Demo Accounts:</p>
-          <ul className="space-y-1">
-            <li><strong>Admin:</strong> admin@example.com / password</li>
-            <li><strong>Agent:</strong> agent@example.com / password</li>
-            <li><strong>Customer:</strong> customer@example.com / password</li>
-          </ul>
+          <p>Need help? <a href="#" className="text-indigo-600 hover:underline">Contact support</a></p> 
         </div>
       </div>
     </div>
