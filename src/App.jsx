@@ -26,11 +26,11 @@ import {
 } from 'lucide-react';
 
 
-const apiKey = "AIzaSyChvNNv_jFj2m3aTfEREbbi11O2TswsocY"; 
+const geminiKey = "AIzaSyChvNNv_jFj2m3aTfEREbbi11O2TswsocY"; 
 
 async function callGeminiAPI(prompt) {
   try {
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`, {
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${geminiKey}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
