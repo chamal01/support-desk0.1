@@ -61,11 +61,11 @@ const auth = getAuth(app);
 const appId = 'local-support-desk';
 
 
-const initialUsers = [
-  { id: 'U-101', name: 'System Admin', email: 'admin@example.com', password: 'password', role: 'Admin' },
-  { id: 'U-102', name: 'Support Agent', email: 'agent@example.com', password: 'password', role: 'Agent' },
-  { id: 'U-103', name: 'John Doe', email: 'customer@example.com', password: 'password', role: 'Customer' },
-];
+//const initialUsers = [
+  //{ id: 'U-101', name: 'System Admin', email: 'admin@example.com', password: 'password', role: 'Admin' },
+  //{ id: 'U-102', name: 'Support Agent', email: 'agent@example.com', password: 'password', role: 'Agent' },
+  //{ id: 'U-103', name: 'John Doe', email: 'customer@example.com', password: 'password', role: 'Customer' },
+//];
 
 const initialTickets = [
   {
